@@ -83,7 +83,7 @@ public class TableroJava2D extends JPanel implements MouseListener
          int[] casilla = convertirCoordenadasACasilla(click_x, click_y);
 
          cantidades[casilla[0]][casilla[1]]++;
-         juego.Jugar(casilla[0], casilla[1]);
+         //juego.Jugar(casilla[0], casilla[1]);
          cantidadJugadas +=1;
          
          repaint();
@@ -123,5 +123,5 @@ public class TableroJava2D extends JPanel implements MouseListener
 }
 
 	
-}
+
 

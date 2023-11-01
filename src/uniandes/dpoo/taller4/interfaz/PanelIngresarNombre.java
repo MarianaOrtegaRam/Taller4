@@ -40,7 +40,7 @@ public class PanelIngresarNombre extends JFrame implements ActionListener{
 			
 			add(panel);
 			
-			setSize(400, 400);
+			setSize(400, 200);
 			setLocationRelativeTo(null);
 			setResizable(true);
 			setDefaultCloseOperation(DISPOSE_ON_CLOSE);
