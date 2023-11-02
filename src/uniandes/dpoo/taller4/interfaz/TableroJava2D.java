@@ -21,10 +21,10 @@ import uniandes.dpoo.taller4.modelo.Tablero;
 public class TableroJava2D extends JPanel implements MouseListener
 {
 	private LightsOutGameGUI juego;
-	private int[][] cantidades;
-    private int largo;
-    private boolean[][] tablero;
-    public int cantidadJugadas;
+	public int[][] cantidades;
+	public int largo;
+	public boolean[][] tablero;
+	public int cantidadJugadas;
     
     public TableroJava2D(LightsOutGameGUI juego){
         setSize(600,600);
@@ -83,7 +83,7 @@ public class TableroJava2D extends JPanel implements MouseListener
          int[] casilla = convertirCoordenadasACasilla(click_x, click_y);
 
          cantidades[casilla[0]][casilla[1]]++;
-         //juego.Jugar(casilla[0], casilla[1]);
+         juego.Jugar(casilla[0], casilla[1]);
          cantidadJugadas +=1;
          
          repaint();

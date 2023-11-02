@@ -19,18 +19,19 @@ import javax.swing.SwingConstants;
 @SuppressWarnings("serial")
 public class VentanaTop10 extends JFrame {
 
-	private Top10 top10 = null;
-	private boolean visibilidad = false;
-	private JPanel panel;
-	private JPanel headerPanel;
-	private JLabel header;
-	private String str10Resgitros;
-	private String[] lista10Registros;
-	private JList<String> listaJlist;
+	public Top10 lostop10 = null;
+	public boolean visibilidad = false;
+	public JPanel panel;
+	public JPanel headerPanel;
+	public JLabel header;
+	public String str10Resgitros;
+	public String[] lista10Registros;
+	public JList<String> listaJlist;
 	
 	
 	
 	public VentanaTop10(Top10 queu) {
+		this.lostop10 = queu;
 		setTitle("Top 10 Jugadores");
 		setDefaultCloseOperation(HIDE_ON_CLOSE);
 		setSize(300, 500);
@@ -57,7 +58,7 @@ public class VentanaTop10 extends JFrame {
 		
 		this.str10Resgitros = "";
 		int contador = 1;
-		for (RegistroTop10 i : top10.darRegistros())
+		for (RegistroTop10 i : lostop10.darRegistros())
 		{
 			str10Resgitros += contador + "  " + i.darNombre() + " " + i.darPuntos() + ",";
 			contador++;

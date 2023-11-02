@@ -12,10 +12,10 @@ import javax.swing.border.Border;
 public class PanelInformacionJuego extends JPanel {
 	
 	private LightsOutGameGUI juego;
-	private JLabel nombre;
-	private JLabel jugadorLabel;
-	private JLabel jugadasRealizadas;
-	private JLabel jugadasLabel;
+	public JLabel nombre;
+	public JLabel jugadorLabel;
+	public JLabel jugadasRealizadas;
+	public JLabel jugadasLabel;
 	
 	public PanelInformacionJuego(LightsOutGameGUI juego) {
 	

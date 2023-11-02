@@ -7,11 +7,11 @@ import javax.swing.border.Border;
 
 public class PanelBotonesDerecha extends JPanel {
 	
-	private LightsOutGameGUI juego;
-	private JButton nuevoJuego;
-	private JButton reiniciarJuego;
-	private JButton verTop10;
-	private JButton cambiarJugador;
+	public LightsOutGameGUI juego;
+	public JButton nuevoJuego;
+	public JButton reiniciarJuego;
+	public JButton verTop10;
+	public JButton cambiarJugador;
 	
 	public PanelBotonesDerecha (LightsOutGameGUI juego) {
 		

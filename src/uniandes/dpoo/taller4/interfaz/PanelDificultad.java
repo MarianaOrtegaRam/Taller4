@@ -12,15 +12,15 @@ import javax.swing.border.Border;
 
 public class PanelDificultad extends JPanel {
 
-	private LightsOutGameGUI juego;
-	private JComboBox <String >opcionesTamanio;
+	public LightsOutGameGUI juego;
+	public JComboBox <String >opcionesTamanio;
 	
-	private JRadioButton facil;
-	private JRadioButton intermedio;
-	private JRadioButton dificil;
-	private ButtonGroup grupoDificultades;
-	private JLabel tamanio;
-	private JLabel dificultad;
+	public JRadioButton facil;
+	public JRadioButton intermedio;
+	public JRadioButton dificil;
+	public ButtonGroup grupoDificultades;
+	public JLabel tamanio;
+	public JLabel dificultad;
 	
 	public PanelDificultad(LightsOutGameGUI juego)
 	{
@@ -37,6 +37,7 @@ public class PanelDificultad extends JPanel {
 		opcionesTamanio.setMaximumSize(getPreferredSize());
 		opcionesTamanio.setAlignmentX(LEFT_ALIGNMENT);
 		opcionesTamanio.addActionListener(juego);
+		this.add(opcionesTamanio);
 		
 		this.dificultad = new JLabel("Dificultad: ");
 		this.add(dificultad);

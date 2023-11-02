@@ -16,11 +16,11 @@ import com.formdev.flatlaf.FlatLightLaf;
 @SuppressWarnings("serial")
 public class PanelIngresarNombre extends JFrame implements ActionListener{
 
-		private String nombre; //guarda el nombre del jugador
-		private JButton boton; 
-		private JTextField texto; //para que coloque su nombre
-		private JLabel pide_nombre;
-		private JPanel panel; 
+		public String nombre; //guarda el nombre del jugador
+		public JButton boton; 
+		public JTextField texto; //para que coloque su nombre
+		public JLabel pide_nombre;
+		public JPanel panel; 
 		
 		public PanelIngresarNombre() {
 			//Define el titulo de la Ventanita
@@ -54,7 +54,7 @@ public class PanelIngresarNombre extends JFrame implements ActionListener{
 			if (e.getSource() == boton)
 			{
 				this.nombre = texto.getText();
-				//new LightsOutGameGUI(nombre);
+				new LightsOutGameGUI(nombre);
 				this.dispose();
 			}
 
