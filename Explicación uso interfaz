@@ -1,0 +1,6 @@
+Para utlizar correctamente el juego, se dbe correr desde LightsOutGameGUI, donde indicará su nombre con sus iniciales.
+Despues de eso se hará visible la ventana de LightsOutGameGUI, donde usted podrá en la parte superior esocger 
+el tamaño del tablero y la dificultad que desea. En la parte de la derecha encontrará un panel de bontones que le permitirá
+iniciar un nuevo juego, reiniciar el actual, ver el top10 del momento y cambiar el jugadro, es decir ingresar unas 
+nuevas iniciales. En la parte inferior encontramos la información de quien y que tal está jugando la persona actualmente
+dejando ver sus jugadas y nombre. 
